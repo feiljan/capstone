@@ -1,1 +1,22 @@
-html {background-color:#f5a623;}
+/* Universal Styles */
+
+html {
+font-size: 16px;
+}
+.navbar-brand {background-color:#000000;
+  
+}
+
+.container-fluid{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
+height: 500px;
+width:100%;
+}
+
+h1 {font-family:Roboto;
+font-size:3.125rem;
+font-weight:bold;
+color:#ffffff;
+line-height:1;}
+
+p {font-size:1.5rem;
+line-height:1.5;}
