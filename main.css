@@ -1,15 +1,20 @@
 /* Universal Styles */
 
-html {background-color:#000000;
+html {
 font-size: 16px;
 margin-top: 0;
 }
 
 .navbar-brand {
+  background-color:#000000;
   height: 3.785rem;
+  width: auto;
+
 }
 
-.navbar-right{justify-content: space-between;
+.container{
+display: inline;
+justify-content: space-between;
 font-family: Open Sans;
 font-size: 1rem;
 font-weight:bold;
