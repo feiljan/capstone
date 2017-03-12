@@ -2,59 +2,98 @@
 
 html {
 font-size: 16px;
+margin-top: 0;
+
 }
 .navbar-brand {background-color:#000000;
-
+  height: 3.785rem;
+  width: 100%;
 }
+.navbar-nav {display: inline-flex;
+Background-color:#000000;
+justify-content: space-between;
+margin-right: 3.4375rem;}
 
 .container-dancers{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
-height: 300px;
+height: 24.1150rem;
 width:100%;
 }
 
-h1 {font-family:Roboto;
+.container-text1 {font-family:Roboto;
 font-size:3.125rem;
 font-weight:bold;
-color:#DCDCDC;
-line-height:1;}
+color:#ffffff;
+line-height:1;
+width: 45rem;
+}
+
 
 p {font-size:1.5rem;
   color: #DCDCDC;
-line-height:1.5;}
+line-height:1.5;
+}
 
 .button-buy {border-radius:2px;
 background-color:#f5a623;
 font-family:Open Sans;
 font-size:1.375rem;
 font-weight:bold;
-width: 15%;
-color: #DCDCDC;}
+width: 20%;
+color: #DCDCDC;
+margin: 1.25rem 3.125rem 1.25rem 3.125rem;}
 
 .container-graffiti{background-image:url(pyt_dance_studio_resources/graffiti-photo.png);
-height: 300 px;
+height: 31.25rem;
 width:100%;}
 
 .container-text {background-color: rgba(120,73,225,0.9);
-width: 30%;
-justify-content: flex-end;}
+width: 25rem;
+height: 20rem;}
 
 h2{
 font-size:2.25rem;
 font-weight:bold;
-line-height:1.4;}
+line-height:1.2;
+color:#ffffff;
+margin-left: 3rem;
+margin-right: 3rem;
+}
 
 p{font-size:1.125rem;
-line-height:1.4;}
+line-height:1.4;
+margin-top: 1.25rem;}
 
 p{font-weight:bold;}
 
 .container-fire{background-image:url(pyt_dance_studio_resources/fire-photo.png);
-  height: 300 px;
+  height: 31.25rem;
   width:100%;}
 
   .container-text2 {background-color: rgba(173,74,226,0.9);
-  width: 30%;
+  width: 25rem;
+  height: 20rem;
   justify-content: flex-end;}
+
+  h2{
+  font-size:2.25rem;
+  font-weight:bold;
+  line-height:1.4;
+}
+
+  p{font-size:1.125rem;
+  line-height:1.4;
+}
+
+  p{font-weight:bold;
+}
+.container-jump{background-image:url(pyt_dance_studio_resources/jump-photo.png);
+height: 31.25rem
+width: 100%;}
+
+.container-text3 {background-color: rgba(173,74,226,0.9);
+width: 25rem;
+height: 20rem;
+justify-content: flex-end;}
 
   h2{
   font-size:2.25rem;
