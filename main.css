@@ -129,12 +129,13 @@ position: absolute;}
 
   p{font-weight:bold;
 }
-.container-foot {height: 3.125rem;
+.container-bottom {height: 3.125rem;
   width: auto;
   background-color: rgba(120,73,227,0.9);
-display:inline;
-justify-content: space-between;
+color:#ffffff;
+font-size: .875rem;
 }
+
 
 .container-foot2 {
 background-color: #ffffff;
