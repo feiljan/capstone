@@ -70,3 +70,9 @@ width: 25rem;
 height: 25rem;
 position: absolute;
 color: #ffffff;}
+.container-foot {height: 3.125rem;
+  width: auto;
+  background-color: rgba(120,73,227,0.9);
+display:inline;
+justify-content: space-between;
+}
