@@ -9,24 +9,25 @@ margin-top: 0;
   background-color:#000000;
   height: 3.785rem;
   width: auto;
-
 }
 
 .container{
-display: inline;
-justify-content: space-between;
+background-color: #000000;
 font-family: Open Sans;
 font-size: 1rem;
 font-weight:bold;
-color: #ffffff;}
+}
+
+.navbar-right{
+  justify-content: space-between;
+  color: #ffffff;
+}
 
 .container-dancers{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
 height: 31.25rem;
 width: auto;
 padding-top: 3.875rem;
-align-items: center;
-justify-content: center;
-}
+position: relative;}
 
 .container-text1 {font-family:Roboto;
 font-size:3.125rem;
@@ -34,7 +35,7 @@ font-weight:bold;
 color:#ffffff;
 line-height:1;
 width: 45rem;
-
+align-items: center;
 }
 
 
@@ -43,14 +44,12 @@ p {font-size:1.5rem;
 line-height:1.5;
 }
 
-.button-buy {border-radius:2px;
+.btn-primary {border-radius: 2px;
 background-color:#f5a623;
 font-family:Open-Sans;
+margin: 1.25rem 3.125rem;
 font-size:1.375rem;
-font-weight:bold;
-width: 20%;
-color: #DCDCDC;
-margin: 1.25rem 3.125rem 1.25rem 3.125rem;}
+font-weight:bold;}
 
 .container-graffiti{background-image:url(pyt_dance_studio_resources/graffiti-photo.png);
 height: 31.25rem;
@@ -62,7 +61,8 @@ justify-content: center;
 
 .container-text {background-color: rgba(120,73,225,0.9);
 width: 25rem;
-height: 20rem;}
+height: 20rem;
+position: absolute;}
 
 h2{
 font-size:2.25rem;
@@ -115,7 +115,7 @@ justify-content: center;
 .container-text3 {background-color: rgba(173,74,226,0.9);
 width: 25rem;
 height: 20rem;
-justify-content: flex-end;}
+position: absolute;}
 
   h2{
   font-size:2.25rem;
@@ -130,7 +130,18 @@ justify-content: flex-end;}
   p{font-weight:bold;
 }
 .container-foot {height: 3.125rem;
-  backgroud-color: rgba(120,73,225,0.7);}
+  width: auto;
+  background-color: rgba(120,73,227,0.9);
+display:inline;
+justify-content: space-between;
+}
 
-
+.container-foot2 {
+background-color: #ffffff;
+height: 15rem;
+width: auto;
+color: #000000;
+justify-content: center;
+font-size: .875rem;
+letter-spacing: 0.7px;
 }

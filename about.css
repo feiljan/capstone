@@ -1,0 +1,72 @@
+/* Universal Styles */
+
+html {
+font-size: 16px;
+margin-top: 0;
+}
+
+.navbar-brand {
+  background-color:#000000;
+  height: 3.785rem;
+  width: auto;
+}
+
+.container{
+background-color: #000000;
+font-family: Open Sans;
+font-size: 1rem;
+font-weight:bold;
+  justify-content: space-between;
+  color: #f5a623;
+}
+
+.container-workout{
+height: 31.25rem;
+padding-top: 3.875rem;
+position: relative;
+border-bottom: #794ae2;}
+
+h1 {font-family:Roboto;
+font-size:3.125rem;
+font-weight:bold;
+color:#794ae2;
+align-items: center;
+margin-top:4rem;
+}
+
+
+p {font-size:1.5rem;
+  color: #666666;
+margi-top:4rem;
+}
+
+.banner {background-color: #f2f2f2;
+}
+img{size:9.375rem;
+}
+
+h2 {font-size:2.25rem;
+  margin-top: 4rem;
+font-weight: bold;
+color:794ae2;}
+
+p{font-size:1.5rem;
+line-height: 1.5;
+color:#666666;}
+
+.banner2 {background-color: #ffffff;
+  margin-bottom: 4rem;
+}
+.banner3{background-color: #f2f2f2;}
+.banner4{background-color: #ffffff;}
+.container-map{background-image:url(pyt_dance_studio_resources/map.jpg);
+height: 31.25rem;
+width: auto;
+padding-top: 3.875rem;
+position: relative;}
+
+.container-text {background-color: rgba(120,73,225,0.9);
+width: 25rem;
+height: 25rem;
+position: absolute;
+color: #ffffff;}
