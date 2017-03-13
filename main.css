@@ -19,8 +19,9 @@ font-weight:bold;
 }
 
 .navbar-right{
-  justify-content: space-between;
   color: #ffffff;
+  display: flex;
+    flex-direction: row;
 }
 
 .container-dancers{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
@@ -35,7 +36,7 @@ font-weight:bold;
 color:#ffffff;
 line-height:1;
 width: 45rem;
-align-items: center;
+
 }
 
 
@@ -57,6 +58,7 @@ width: auto;
 padding-top: 3.875rem;
 align-items: center;
 justify-content: center;
+position: relative;
 }
 
 .container-text {background-color: rgba(120,73,225,0.9);

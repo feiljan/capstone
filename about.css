@@ -5,26 +5,29 @@ font-size: 16px;
 margin-top: 0;
 }
 
-.navbar-brand {
-
-  height: 3.785rem;
-  width: auto;
-}
 
 .container{
 background-color: #000000;
 font-family: Open Sans;
 font-size: 1rem;
 font-weight:bold;
-  justify-content: space-between;
   color: #f5a623;
+}
+.navbar-brand {
+  height: 3.785rem;
+  width: auto;
+}
+
+.navbar-right{display: flex;
+  flex-direction: row;
 }
 
 .container-workout{
 height: 31.25rem;
 padding-top: 3.875rem;
 position: relative;
-border-bottom: #794ae2;}
+border-bottom: #794ae2;
+}
 
 h1 {font-family:Roboto;
 font-size:3.125rem;
@@ -41,8 +44,13 @@ margi-top:4rem;
 }
 
 .banner {background-color: #f2f2f2;
+
 }
+
 img{size:9.375rem;
+  margin-left: 19%;
+  margin-right:5rem;
+  margin-top: 8rem;
 }
 
 h2 {font-size:2.25rem;
@@ -56,6 +64,7 @@ color:#666666;}
 
 .banner2 {background-color: #ffffff;
   margin-bottom: 4rem;
+    margin-left: 19%;
 }
 .banner3{background-color: #f2f2f2;}
 .banner4{background-color: #ffffff;}
@@ -78,3 +87,5 @@ h4{ color: #ffffff;}
 color:#ffffff;
 font-size: .875rem;
 }
+i{justify-content: space-between;}
+h5{justify-content: flex-end;}
