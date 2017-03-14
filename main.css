@@ -16,10 +16,10 @@ background-color: #000000;
 font-family: Open Sans;
 font-size: 1rem;
 font-weight:bold;
+color: #ffffff;
 }
 
 .navbar-right{
-  color: #ffffff;
   display: flex;
     flex-direction: row;
 }
