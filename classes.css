@@ -1,0 +1,41 @@
+
+html {
+font-size: 16px;
+margin-top: 0;
+}
+
+.navbar-fixed-top {background-color:#000000;}
+.navbar-brand {
+    height: 3.785rem;
+  width: auto;
+}
+
+.container{
+font-family: Open Sans;
+font-size: 1rem;
+font-weight:bold;
+color: #ffffff;
+}
+
+.navbar-right{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-bottom {height: 3.125rem;
+  width: auto;
+  background-color: rgba(120,73,227,0.9);
+color:#ffffff;
+font-size: .875rem;
+}
+
+
+.container-foot2 {
+background-color: #000000;
+height: 15rem;
+width: auto;
+color: #ffffff;
+justify-content: center;
+font-size: .875rem;
+letter-spacing: 0.7px;
+}
