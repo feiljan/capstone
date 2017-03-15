@@ -25,14 +25,14 @@ color: #ffffff;
 }
 
 .container-dancers{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
-height: 31.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 31.25rem;
 width: auto;
 padding-top: 3.875rem;}
 
 .container-text1 {font-family:Roboto, sans-serif;
-display:flex;
-justify-content: center;
-align-items: center;
   border-style: solid;
 width: 45rem;
 }
@@ -52,11 +52,13 @@ background-color:#f5a623;
 font-family:Open Sans, sans-serif;
 margin: 1.25rem 3.125rem;
 font-size:1.375rem;
-font-weight:bold;
-align-items: center;}
+font-weight:bold;}
 
 .container-graffiti{background-image:url(pyt_dance_studio_resources/graffiti-photo.png);
-height: 31.25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 31.25rem;
 width: auto;
 padding-top: 3.875rem;
 }
@@ -66,6 +68,7 @@ width: 25rem;
 height: 20rem;
 justify-content: flex-end;
 align-items: flex-end;
+
 }
 
 h2{
@@ -79,14 +82,19 @@ margin-right: 3rem;
 
 p{font-size:1.125rem;
 line-height:1.4;
-margin-top: 1.25rem;}
+}
 
-p{font-weight:bold;}
+p{font-weight:bold;
+margin-bottom: 3rem;
+}
 
 .container-fire{background-image:url(pyt_dance_studio_resources/fire-photo.png);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   height: 31.25rem;
-  width: auto;
-  padding-top: 3.875rem;
+width: auto;
+padding-top: 3.875rem;
 
   }
 
@@ -95,26 +103,33 @@ p{font-weight:bold;}
   height: 20rem;
   justify-content: flex-end;
   align-items: flex-end;
-
   }
 
   h2{
-  font-size:2.25rem;
-  font-weight:bold;
-  line-height:1.4;
+    font-size:2.25rem;
+    font-weight:bold;
+    line-height:1.2;
+    color:#ffffff;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
   p{font-size:1.125rem;
   line-height:1.4;
+
 }
 
   p{font-weight:bold;
+    margin-bottom: 3rem;
 }
-.container-jump{background-image:url(pyt_dance_studio_resources/jump-photo.png);
-height: 31.25rem;
-width: auto;
-padding-top: 3.875rem;
 
+.container-jump{background-image:url(pyt_dance_studio_resources/jump-photo.png);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 31.25rem;
+  width: auto;
+  padding-top: 3.875rem;
 }
 
 .container-text3 {background-color: rgba(173,74,226,0.9);
@@ -125,17 +140,23 @@ align-items: flex-end;
 }
 
   h2{
-  font-size:2.25rem;
-  font-weight:bold;
-  line-height:1.4;
+    font-size:2.25rem;
+    font-weight:bold;
+    line-height:1.4;
+    color:#ffffff;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
   p{font-size:1.125rem;
   line-height:1.4;
+
 }
 
   p{font-weight:bold;
+    margin-bottom: 3rem;
 }
+
 .container-bottom {height: 3.125rem;
   width: auto;
   background-color: rgba(120,73,227,0.9);
