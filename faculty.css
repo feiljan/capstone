@@ -22,3 +22,95 @@ color: #ffffff;
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+.container-dancers{background-image:url(pyt_dance_studio_resources/faculty-photo.png);
+  display: flex;
+  justify-content:center;
+  align-items: right;
+  height: 31.25rem;
+width: auto;
+padding-top: 3.875rem;
+border-bottom-color: #8a54ff;
+border-bottom-width: 2rem;}
+
+.container-text1 {
+margin-top: 9rem;
+font-family:Roboto, sans-serif;
+width: 32rem;
+align-items: center;
+}
+
+h1{font-size:3.125rem;
+font-weight:bold;
+color:#8a54ff;
+line-height:1;}
+
+p {font-size:1.5rem;
+  color: #999999;
+line-height:1.5;
+}
+
+
+.container-jazz{
+  margin-top: 5.3125rem;
+width: 16.875rem;
+height: auto;
+justify-content: center;}
+
+h2{font-size: 1.875rem;
+font-weight: bold;
+color: #8a54ff;
+align-items: center;}
+
+h3{font-weight: bold;
+color: #000000;
+padding-bottom: .625rem;
+font-size:1.125rem;
+}
+
+p {font-size: .875rem;
+line-height: 1.5;
+align-items: center;}
+
+
+.container-intro{margin-top: 5.3125rem;
+width: 16.875rem;
+height: auto;
+justify-content: center;}
+
+h2{font-size: 1.875rem;
+font-weight: bold;
+color: #8a54ff;
+align-items: center;
+}
+h3{font-weight: bold;
+color: #000000;
+padding-bottom: .625rem;
+font-size:1.125rem;
+}
+
+p {font-size: .875rem;
+line-height: 1.5;
+align-items: center;}
+
+.container-advanced{margin-top: 5.3125rem;
+width: 16.875rem;
+height: auto;
+justify-content: center;
+font-size: 1rem;
+line-height: 1.5;
+color:#000000;}
+
+h2{font-size: 1.875rem;
+font-weight: bold;
+color: #8a54ff;
+}
+h3{font-weight: bold;
+color: #000000;
+padding-bottom: .625rem;
+font-size:1.125rem;
+}
+p {font-size: .875rem;
+line-height: 1.5;
+}
