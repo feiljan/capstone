@@ -30,9 +30,10 @@ color: #ffffff;
   align-items: right;
   height: 31.25rem;
 width: auto;
-padding-top: 3.875rem;
+padding-top: 9rem;
 border-bottom-color: #8a54ff;
-border-bottom-width: 2rem;}
+border-bottom-style: solid;
+border-bottom-width: .5rem;}
 
 .container-text1 {
 margin-top: 9rem;
@@ -77,7 +78,8 @@ align-items: center;}
 .container-intro{margin-top: 5.3125rem;
 width: 16.875rem;
 height: auto;
-justify-content: center;}
+justify-content: center;
+align-items: center;}
 
 h2{font-size: 1.875rem;
 font-weight: bold;
