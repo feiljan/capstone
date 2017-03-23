@@ -105,3 +105,33 @@ justify-content: center;
 font-size: .875rem;
 letter-spacing: 0.7px;
 }
+.container-bottom {height: 3.125rem;
+  width: auto;
+  background-color: rgba(120,73,227,0.9);
+color:#ffffff;
+font-size: .875rem;
+}
+.container-icons{
+  width: 9.375rem;
+  display:flex;
+  justify-content: space-between;
+
+}
+.container-contact{
+  display: flex;
+  justify-content: flex-end;}
+
+.container-foot2 {
+display: flex;
+background-color: #000000;
+height: 15rem;
+padding-top:5rem;
+justify-content: center;}
+
+h5{
+  display:flex;
+color: #ffffff;
+justify-content: center;
+font-size: .875rem;
+letter-spacing: 0.7px;
+}

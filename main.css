@@ -5,55 +5,68 @@ font-size: 16px;
 margin-top: 0;
 }
 
-.navbar-fixed-top {background-color:#000000;}
+.navbar-fixed-top {background-color:#000000;
+height: 3.785rem;
+  color: #ffffff;}
+
 .navbar-brand {
-    height: 3.785rem;
+  padding-top:0;
+    height: 50px;
   width: auto;
 }
 
 .container{
-font-family: sans-serif;
+font-family: Open Sans,sans-serif;
 font-size: 1rem;
 font-weight:bold;
-
 }
 
 .navbar-right{
   display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    color: #ffffff;
+    justify-content: space-between;
+
 }
 
 .container-dancers{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
-  display: flex;
+display: flex;
   justify-content: center;
   align-items: center;
-  height: 31.25rem;
+  height: 35rem;
 width: auto;
-padding-top: 3.875rem;}
+margin-top: 3rem;
+}
 
 .container-text1 {font-family:Roboto, sans-serif;
 width: 45rem;
-
+padding-top: 9.4375rem;
+padding-bottom: 3.125rem;
 }
 
 h1{font-size:3.125rem;
 font-weight:bold;
 color:#ffffff;
-line-height:1;}
+line-height:1;
+margin-left: 3rem;
+justify-content: center;}
 
 p {font-size:1.5rem;
+  padding-top: 2.6875rem;
   color: #DCDCDC;
 line-height:1.5;
 }
 
-.btn-primary {border-radius: 2px;
+.btn-large {border-radius: 2px;
 background-color:#f5a623;
+padding-left: 3.125rem;
+padding-right: 3.125rem;
+padding-top: 1.25rem;
+padding-bottom: 1.25rem;
 font-family:Open Sans, sans-serif;
-margin: 1.25rem 3.125rem;
 font-size:1.375rem;
 font-weight:bold;
+color: #ffffff;
+align-items: center;
 }
 
 .container-graffiti{background-image:url(pyt_dance_studio_resources/graffiti-photo.png);
@@ -62,15 +75,14 @@ font-weight:bold;
   align-items: flex-end;
   height: 31.25rem;
 width: auto;
-padding-top: 3.875rem;
 }
 
-.container-text {background-color: rgba(120,73,225,0.9);
+.container-text {background-color: rgba(173,74,226,0.9);
 width: 25rem;
 height: 20rem;
 justify-content: flex-end;
 align-items: flex-end;
-
+padding-bottom: 3rem;
 }
 
 h2{
@@ -78,15 +90,16 @@ font-size:2.25rem;
 font-weight:bold;
 line-height:1.2;
 color:#ffffff;
-margin-left: 3rem;
-margin-right: 3rem;
+
 }
 
 p{font-size:1.125rem;
 line-height:1.4;
 }
-p{font-weight:bold;
-  margin-bottom: 3rem;
+h3{font-weight:bold;
+  color:#ffffff;
+  font-size:1.125rem
+
 }
 .container-fire{background-image:url(pyt_dance_studio_resources/fire-photo.png);
   display: flex;
@@ -94,14 +107,15 @@ p{font-weight:bold;
   align-items: flex-end;
   height: 31.25rem;
 width: auto;
-padding-top: 3.875rem;
+
   }
 
   .container-text2 {background-color: rgba(173,74,226,0.9);
-  width: 25rem;
-  height: 20rem;
-  justify-content: flex-end;
-  align-items: flex-end;
+    width: 25rem;
+    height: 20rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 3rem;
 
   }
 
@@ -110,16 +124,18 @@ padding-top: 3.875rem;
     font-weight:bold;
     line-height:1.2;
     color:#ffffff;
-    margin-left: 3rem;
-    margin-right: 3rem;
+
 }
 
   p{font-size:1.125rem;
   line-height:1.4;
 }
 
-  p{font-weight:bold;
-    margin-bottom: 3rem;
+  h3{font-weight:bold;
+    font-size:1.125rem;
+    color:#ffffff;
+
+
 }
 
 .container-jump{background-image:url(pyt_dance_studio_resources/jump-photo.png);
@@ -128,7 +144,7 @@ padding-top: 3.875rem;
   align-items: flex-end;
   height: 31.25rem;
   width: auto;
-  padding-top: 3.875rem;
+
 }
 
 .container-text3 {background-color: rgba(173,74,226,0.9);
@@ -136,6 +152,7 @@ width: 25rem;
 height: 20rem;
 justify-content: flex-end;
 align-items: flex-end;
+  padding-bottom: 3rem;
 }
 
   h2{
@@ -151,8 +168,9 @@ align-items: flex-end;
   line-height:1.4;
 }
 
-  p{font-weight:bold;
-    margin-bottom: 3rem;
+  h3{font-weight:bold;
+    font-size:1.125rem;
+    color:#ffffff;
 }
 
 .container-bottom {height: 3.125rem;
@@ -161,12 +179,25 @@ align-items: flex-end;
 color:#ffffff;
 font-size: .875rem;
 }
+.container-icons{
+  width: 9.375rem;
+  display:flex;
+  justify-content: space-between;
 
+}
+.container-contact{
+  display: flex;
+  justify-content: flex-end;}
 
 .container-foot2 {
+display: flex;
 background-color: #000000;
 height: 15rem;
-width: auto;
+padding-top:5rem;
+justify-content: center;}
+
+h5{
+  display:flex;
 color: #ffffff;
 justify-content: center;
 font-size: .875rem;
