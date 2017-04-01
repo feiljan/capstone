@@ -5,9 +5,14 @@ font-size: 16px;
 margin-top: 0;
 }
 
-.navbar-fixed-top {background-color:#000000;
+
+
+.navbar-top {background-color:#000000;
 height: 3.785rem;
-  color: #ffffff;}
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: Open Sans,sans-serif;
+  font-weight:bold;}
 
 .navbar-brand {
   padding-top:0;
@@ -15,40 +20,36 @@ height: 3.785rem;
   width: auto;
 }
 
-.container{
-font-family: Open Sans,sans-serif;
-font-size: 1rem;
-font-weight:bold;
-}
 
 .navbar-right{
-  display: flex;
+  display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: flex-end;
 }
+
+
 
 .container-dancers{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
 display: flex;
   justify-content: center;
   align-items: center;
-  height: 35rem;
+  height: 31.25rem;
 width: auto;
-margin-top: 3rem;
+margin-top: 0;
 }
 
 .container-text1 {font-family:Roboto, sans-serif;
 width: 45rem;
-padding-top: 9.4375rem;
-padding-bottom: 3.125rem;
+
 }
 
 h1{font-size:3.125rem;
 font-weight:bold;
 color:#ffffff;
 line-height:1;
-margin-left: 3rem;
-justify-content: center;}
+margin-left: 2rem;
+padding-top: 2.6857rem;
+}
 
 p {font-size:1.5rem;
   padding-top: 2.6875rem;
@@ -90,7 +91,6 @@ font-size:2.25rem;
 font-weight:bold;
 line-height:1.2;
 color:#ffffff;
-
 }
 
 p{font-size:1.125rem;
@@ -98,8 +98,8 @@ line-height:1.4;
 }
 h3{font-weight:bold;
   color:#ffffff;
-  font-size:1.125rem
-
+  font-size:1.125rem;
+  margin-bottom: 3rem;
 }
 .container-fire{background-image:url(pyt_dance_studio_resources/fire-photo.png);
   display: flex;
@@ -107,7 +107,6 @@ h3{font-weight:bold;
   align-items: flex-end;
   height: 31.25rem;
 width: auto;
-
   }
 
   .container-text2 {background-color: rgba(173,74,226,0.9);
@@ -116,7 +115,6 @@ width: auto;
     justify-content: flex-end;
     align-items: flex-end;
     padding-bottom: 3rem;
-
   }
 
   h2{
@@ -124,7 +122,6 @@ width: auto;
     font-weight:bold;
     line-height:1.2;
     color:#ffffff;
-
 }
 
   p{font-size:1.125rem;
@@ -134,8 +131,6 @@ width: auto;
   h3{font-weight:bold;
     font-size:1.125rem;
     color:#ffffff;
-
-
 }
 
 .container-jump{background-image:url(pyt_dance_studio_resources/jump-photo.png);
@@ -182,15 +177,17 @@ font-size: .875rem;
 .container-icons{
   width: 9.375rem;
   display:flex;
+  align-items; center;
   justify-content: space-between;
-
 }
 .container-contact{
   display: flex;
+  overflow:hidden;
   justify-content: flex-end;}
 
 .container-foot2 {
 display: flex;
+overflow:hidden;
 background-color: #000000;
 height: 15rem;
 padding-top:5rem;
@@ -203,3 +200,8 @@ justify-content: center;
 font-size: .875rem;
 letter-spacing: 0.7px;
 }
+h6{  display:flex;
+color: #ffffff;
+justify-content: center;
+font-size: .875rem;
+letter-spacing: 0.7px;}

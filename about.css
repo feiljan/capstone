@@ -6,11 +6,9 @@ font-size: 16px;
 margin-top: 0;
 }
 
-.navbar-fixed-top {background-color:#000000;}
-.navbar-brand {
-    height: 3.785rem;
-  width: auto;
-}
+.navbar-fixed-top {background-color:#000000;
+height: 3rem;}
+
 
 .container{
 font-family: Open Sans;
