@@ -1,207 +1,761 @@
-/* Universal Styles */
+/*** Fonts ***//* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*** General rules ***/
 
 html {
-font-size: 16px;
-margin-top: 0;
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
 }
 
-
-
-.navbar-top {background-color:#000000;
-height: 3.785rem;
-  color: #ffffff;
-  font-size: 1rem;
-  font-family: Open Sans,sans-serif;
-  font-weight:bold;}
-
-.navbar-brand {
-  padding-top:0;
-    height: 50px;
-  width: auto;
+.flex {
+	display: flex;
+	align-items: center;
 }
 
-
-.navbar-right{
-  display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
+a {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
 }
 
-
-
-.container-dancers{background-image:url(pyt_dance_studio_resources/dancers-photo.png);
-display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 31.25rem;
-width: auto;
-margin-top: 0;
+a:hover {
+	text-decoration: underline;
 }
 
-.container-text1 {font-family:Roboto, sans-serif;
-width: 45rem;
+/*** Custom CSS ***/
 
+/* Navbar (on all pages!) */
+
+header {
+	background-color: #000000;
+	height: 3.875rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
 }
 
-h1{font-size:3.125rem;
-font-weight:bold;
-color:#ffffff;
-line-height:1;
-margin-left: 2rem;
-padding-top: 2.6857rem;
+#brand {
+	margin: 0 auto 0 3.6875rem;
 }
 
-p {font-size:1.5rem;
-  padding-top: 2.6875rem;
-  color: #DCDCDC;
-line-height:1.5;
+#brand-mobile {
+	display: none;
 }
 
-.btn-large {border-radius: 2px;
-background-color:#f5a623;
-padding-left: 3.125rem;
-padding-right: 3.125rem;
-padding-top: 1.25rem;
-padding-bottom: 1.25rem;
-font-family:Open Sans, sans-serif;
-font-size:1.375rem;
-font-weight:bold;
-color: #ffffff;
-align-items: center;
+header nav ul {
+	margin-right: 3.4375rem;
 }
 
-.container-graffiti{background-image:url(pyt_dance_studio_resources/graffiti-photo.png);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 31.25rem;
-width: auto;
+header nav ul li {
+	padding-right: 1rem;
 }
 
-.container-text {background-color: rgba(173,74,226,0.9);
-width: 25rem;
-height: 20rem;
-justify-content: flex-end;
-align-items: flex-end;
-padding-bottom: 3rem;
+header nav ul li a {
+	font-family: "Open Sans", sans-serif;
 }
 
-h2{
-font-size:2.25rem;
-font-weight:bold;
-line-height:1.2;
-color:#ffffff;
+.active {
+	color: #f5a623;
 }
 
-p{font-size:1.125rem;
-line-height:1.4;
-}
-h3{font-weight:bold;
-  color:#ffffff;
-  font-size:1.125rem;
-  margin-bottom: 3rem;
-}
-.container-fire{background-image:url(pyt_dance_studio_resources/fire-photo.png);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 31.25rem;
-width: auto;
-  }
+/***** HOME PAGE *****/
+/* Banner-Home */
 
-  .container-text2 {background-color: rgba(173,74,226,0.9);
-    width: 25rem;
-    height: 20rem;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-bottom: 3rem;
-  }
-
-  h2{
-    font-size:2.25rem;
-    font-weight:bold;
-    line-height:1.2;
-    color:#ffffff;
+#banner-home {
+	align-items: center;
+	justify-content: center;
+	background-image: url('pyt_dance_studio_resources/dancers-photo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 3.875rem;
+	text-align: center;
 }
 
-  p{font-size:1.125rem;
-  line-height:1.4;
+#banner-home .banner-text {
+	margin-top: 9.4375rem;
+	margin-bottom: 3.125rem;
+	width: 45rem;
 }
 
-  h3{font-weight:bold;
-    font-size:1.125rem;
-    color:#ffffff;
+#banner-home h1 {
+	font-size: 3.125rem;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 2.6875rem;
 }
 
-.container-jump{background-image:url(pyt_dance_studio_resources/jump-photo.png);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 31.25rem;
-  width: auto;
+#banner-home p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 5rem;
 
 }
 
-.container-text3 {background-color: rgba(173,74,226,0.9);
-width: 25rem;
-height: 20rem;
-justify-content: flex-end;
-align-items: flex-end;
-  padding-bottom: 3rem;
+#banner-home a {
+	border-radius: 2px;
+	background-color: #f5a623;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.375rem;
+	padding: 1.25rem 3.125rem;
 }
 
-  h2{
-    font-size:2.25rem;
-    font-weight:bold;
-    line-height:1.4;
-    color:#ffffff;
-    margin-left: 3rem;
-    margin-right: 3rem;
+/* Banner Two Home */
+
+#banner-two-home {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('pyt_dance_studio_resources/graffiti-photo.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-  p{font-size:1.125rem;
-  line-height:1.4;
+/* Sub banner Home*/
+.sub-banner .banner-text {
+	background-color: rgba(120,73,225,0.9);
+	width: 25rem;
+	margin-top: 6.25rem;
 }
 
-  h3{font-weight:bold;
-    font-size:1.125rem;
-    color:#ffffff;
+.sub-banner .banner-text .text {
+	margin: 5rem 3rem 3rem 3rem;
 }
 
-.container-bottom {height: 3.125rem;
-  width: auto;
-  background-color: rgba(120,73,227,0.9);
-color:#ffffff;
-font-size: .875rem;
+.sub-banner .banner-text h2 {
+	font-size: 2.25rem;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 1.25rem;
 }
-.container-icons{
-  width: 9.375rem;
-  display:flex;
-  align-items; center;
-  justify-content: space-between;
-}
-.container-contact{
-  display: flex;
-  overflow:hidden;
-  justify-content: flex-end;}
 
-.container-foot2 {
-display: flex;
-overflow:hidden;
-background-color: #000000;
-height: 15rem;
-padding-top:5rem;
-justify-content: center;}
-
-h5{
-  display:flex;
-color: #ffffff;
-justify-content: center;
-font-size: .875rem;
-letter-spacing: 0.7px;
+.sub-banner .banner-text p {
+	font-size: 1.125rem;
+	line-height: 1.4;
 }
-h6{  display:flex;
-color: #ffffff;
-justify-content: center;
-font-size: .875rem;
-letter-spacing: 0.7px;}
+
+.sub-banner .banner-text p:first-of-type {
+	margin-bottom: 1.25rem;
+}
+
+/* Banner Three Home */
+
+#banner-three-home {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('pyt_dance_studio_resources/fire-photo.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#banner-three-home .banner-text {
+	background-color: rgba(173, 74, 226, 0.9);
+}
+
+/* Banner Four Home */
+
+#banner-four-home {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('pyt_dance_studio_resources/jump-photo.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Footer (on all pages!) */
+
+footer {
+	background-image: url('pyt_dance_studio_resources/party-photo.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex-direction: column;
+}
+
+footer nav {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+	width: 95%;
+}
+
+footer a {
+	font-weight: normal;
+}
+
+.fa-icons {
+	width: 9.375rem;
+	justify-content: space-between;
+}
+
+.bottom {
+	background-color: rgba(0,0,0,0.4);
+	flex-direction: column;
+	font-size: 0.875rem;
+	padding: 5rem 0;
+	width: 100%;
+}
+
+.contact {
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	width: 55%;
+}
+
+.phone-email {
+    width: 40%;
+    justify-content: space-around;
+}
+
+/***** ABOUT *****/
+
+/* Faculty banner */
+
+#banner-faculty {
+	background-color: #000000;
+}
+
+/* Banner About */
+.banner-about {
+	border-bottom: 10px solid #794ae2;
+	flex-direction: row;
+	line-height: 0;
+	margin-top: 3.875rem;
+	overflow: hidden;
+}
+
+.banner-about-image {
+	width: 50%;
+}
+
+.banner-about-text {
+	width: 50%;
+}
+
+.banner-about-text .text {
+	text-align: center;
+	width: 85%;
+}
+
+.banner-about-text h1 {
+	color: #794ae2;
+	font-size: 3.125rem;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 4rem;
+}
+
+.banner-about-text p {
+	color: #666666;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+/* Sub banners */
+.sub-banner-dark-about {
+	background-color: #f2f2f2;
+	justify-content: center;
+	padding: 4rem 19%;
+}
+
+.sub-banner-dark-about .sub-banner-image {
+	margin-right: 5rem;
+}
+
+.sub-banner-dark-about .text {
+	flex-direction: column;
+	text-align: center;
+}
+
+.sub-banner-dark-about .text h2 {
+	color: #794ae2;
+	font-size: 2.25rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.sub-banner-dark-about .text p {
+	color: #666666;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.sub-banner-light-about {
+	background-color: #ffffff;
+	justify-content: center;
+	padding: 4rem 19%;
+}
+
+.sub-banner-light-about .text {
+	flex-direction: column;
+	margin-right: 5rem;
+	text-align: center;
+}
+
+.sub-banner-light-about .text h2 {
+	color: #794ae2;
+	font-size: 2.25rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.sub-banner-light-about .text p {
+	color: #666666;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.heartclock {
+	padding-bottom: 2rem;
+}
+
+/* Banner Map */
+#banner-map {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('pyt_dance_studio_resources/map.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#banner-map .text {
+	margin: 3rem 3rem 4rem 3rem;
+}
+
+#banner-map .text p {
+	font-size: 1rem;
+	line-height: 1.3;
+}
+
+#banner-map .text p:first-of-type {
+	margin-bottom: 0;
+}
+
+#banner-map .text p a {
+	font-weight: normal;
+}
+
+/***** CLASSES *****/
+
+#classes {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 5.3125rem 1.125rem 2.4rem 1.125rem;
+}
+
+.class {
+	margin-bottom: 3.75rem;
+	width: 25rem;
+}
+
+.class h2 {
+	color: rgba(174, 75, 227, 0.9);
+	font-size: 1.875rem;
+	font-weight: bold;
+	margin-bottom: 1.125rem;
+}
+
+.class .time {
+	margin-bottom: 1.125rem;
+}
+
+.class .time, .class .description {
+	color: #000000;
+}
+
+.class .time h4 {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.class .time p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.class .description p {
+	font-size: 0.875rem;
+	line-height: 1.7;
+}
+
+/*** MEDIA QUERIES ***/
+/* Desktop size */
+@media only screen and (max-width: 1235px) {
+
+	/* CLASSES */
+	#classes .class {
+		margin-bottom: 2.25rem;
+		width: 18.75rem;
+	}
+
+	.class .time p {
+		font-size: 1.125rem;
+	}
+
+	.class .description p {
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+/* Tablet size */
+@media only screen and (max-width: 1095px) {
+	/* Footer */
+	.contact {
+		width: 60%;
+	}
+}
+
+/* Tablet size */
+@media only screen and (max-width: 1024px) {
+
+	/* HOME PAGE */
+
+	/* banner home */
+	#banner-home .banner-text {
+		width: 31.25rem;
+	}
+
+	.sub-banner .banner-text {
+		margin-top: 20rem;
+		width: 100%;
+	}
+
+	.sub-banner .banner-text .text{
+		margin-top: 1.875rem;
+		margin-right: 3.4375rem;
+		margin-left: 1.875rem;
+	}
+
+	.sub-banner .banner-text h2 {
+		font-size: 1.875rem;
+		line-height: 1.4;
+		margin-bottom: 0.625rem;
+	}
+
+	.sub-banner .banner-text p {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	/* Footer */
+	footer nav {
+		justify-content: center;
+		padding: 0.875rem 0;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.fa-icons {
+		width: 5.4375rem;
+	}
+
+	.fa-2x {
+		font-size: 1rem;
+	}
+
+	.bottom {
+		font-size: 0.625rem;
+		letter-spacing: 0.5px;
+		line-height: 1.5;
+		padding: 1.875rem 0;
+	}
+
+	.contact {
+		flex-direction: column;
+	}
+
+	.phone-email {
+        display: block;
+        width: initial;
+    }
+
+	/* ABOUT PAGE */
+	/* Banner About*/
+	.banner-about {
+		flex-direction: column;
+	}
+
+	.banner-about-image {
+		width: 100%;
+	}
+
+	#banner-faculty .banner-about-text {
+		background-color: rgba(0,0,0,1);
+	}
+
+	.banner-about-text {
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 2rem 0;
+		z-index: 10;
+	}
+
+	.banner-about-text .text {
+		width: 80%;
+	}
+
+	.banner-about-text h1 {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.banner-about-text p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	/* sub banners about */
+	.sub-banner-dark-about {
+		flex-direction: column;
+		padding: 1.875rem 19%;
+	}
+
+	.sub-banner-dark-about .sub-banner-image {
+		margin-right: 0;
+		margin-bottom: 1rem;
+		height: 6.25rem;
+	}
+
+	.sub-banner-dark-about .sub-banner-image img {
+		height: 100%;
+		width: auto;
+	}
+
+	.sub-banner-dark-about .text h2 {
+		font-size: 1.75rem;
+	}
+
+	.sub-banner-dark-about .text p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.sub-banner-light-about {
+		flex-direction: column-reverse;
+		padding: 1.875rem 19%;
+	}
+
+	.sub-banner-light-about .sub-banner-image {
+		margin-bottom: 1rem;
+		height: 6.25rem;
+	}
+
+	.sub-banner-light-about .sub-banner-image img {
+		height: 100%;
+		width: auto;
+	}
+
+	.sub-banner-light-about .text {
+		margin-right: 0;
+	}
+
+	.sub-banner-light-about .text h2 {
+		font-size: 1.75rem;
+	}
+
+	.sub-banner-light-about .text p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+	.heartclock {
+		padding-bottom: 0;
+	}
+
+	/* Map banner section*/
+	#banner-map .banner-text {
+		width: 60%;
+	}
+
+	#banner-map .text {
+		margin: 2rem 2rem 1rem 2rem;
+	}
+
+	#banner-map .text p {
+		line-height: 1.6;
+	}
+
+	/*** CLASSES PAGE ***/
+/*	#classes .class {
+		margin-bottom: 2.25rem;
+		width: 18.75rem;
+	}
+	.class .time p {
+		font-size: 1.125rem;
+	}
+	.class .description p {
+		font-size: 1rem;
+		line-height: 1.5;
+	}*/
+}
+
+@media only screen and (max-width: 890px) {
+	#banner-about {
+		background-image: url('pyt_dance_studio_resources/workout-photo.png');
+	}
+
+	#banner-classes {
+		background-image: url('pyt_dance_studio_resources/classes-photo.png');
+	}
+
+	#banner-faculty {
+		background-image: url('pyt_dance_studio_resources/faculty-photo.png');
+		background-position: left center;
+	}
+
+	#banner-faculty .banner-about-text {
+		background-color: rgba(0,0,0,0.7);
+	}
+
+	.banner-about {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.banner-about-image {
+		visibility: hidden;
+	}
+}
+
+/* Mobile size */
+@media only screen and (max-width: 770px) {
+
+	/* Navbar */
+	header {
+		height: 2.5rem
+	}
+
+	#brand {
+		display: none;
+	}
+
+	#brand-mobile {
+		display: block;
+		margin-left: 0.625rem;
+		margin-right: auto;
+	}
+
+	header nav ul {
+		margin-right: 0.625rem
+	}
+
+	header nav ul li {
+		padding-right: 2.25rem;
+	}
+
+	header nav ul li:last-child {
+		padding-right: 0;
+	}
+
+	header nav ul li a {
+		font-size: 0.75rem;
+	}
+
+	/* banner home */
+	#banner-home, .banner-about {
+		margin-top: 2.5rem;
+	}
+
+	#banner-home .banner-text {
+		margin-top: 7.125rem;
+		width: 18.5rem;
+	}
+
+	#banner-home h1 {
+		font-size: 1.875rem;
+		margin-bottom: 1.625rem;
+	}
+
+	#banner-home p {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 3.875rem;
+	}
+
+	.sub-banner .banner-text h2 {
+		font-size: 1.25rem;
+		line-height: 1.2;
+	}
+
+	.sub-banner .banner-text p {
+		font-size: 1rem;
+	}
+
+	.sub-banner .banner-text .text {
+		margin: 2rem 1.25rem;
+	}
+
+	/*** CLASSES ***/
+	#classes .class {
+		margin-bottom: 2.5rem;
+		width: 17.5rem;
+	}
+
+	.class .time {
+		margin-bottom: .625rem;
+	}
+
+	.class .time h4 {
+		font-size: 1rem;
+	}
+
+	.class .time p {
+		font-size: .875rem;
+		line-height: 1.7;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	.banner-about-image {
+		height: 25rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#classes {
+		justify-content: center;
+	}
+}
