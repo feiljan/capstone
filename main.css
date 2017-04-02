@@ -1,4 +1,5 @@
-/*** Fonts ***//* latin */
+/*** Fonts ***/
+/* latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -54,7 +55,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-/*** Custom CSS Changes ***/
+/*** CSS Changes***/
 
 /* Navbar (all pages) */
 
@@ -93,7 +94,7 @@ header nav ul li a {
 }
 
 /***** HOME PAGE *****/
-/* Banner-Home (Dancers) */
+/* Banner-Home Dancers*/
 
 #banner-home {
 	align-items: center;
@@ -104,6 +105,7 @@ header nav ul li a {
 	background-size: cover;
 	margin-top: 3.875rem;
 	text-align: center;
+  color: #ffffff;
 }
 
 #banner-home .banner-text {
@@ -117,12 +119,14 @@ header nav ul li a {
 	font-weight: bold;
 	line-height: 1;
 	margin-bottom: 2.6875rem;
+  color: #fffff;
 }
 
 #banner-home p {
 	font-size: 1.5rem;
 	line-height: 1.5;
 	margin-bottom: 5rem;
+  color: #fffff;
 
 }
 
@@ -133,9 +137,10 @@ header nav ul li a {
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.375rem;
 	padding: 1.25rem 3.125rem;
+  color: #ffffff;
 }
 
-/* Banner Two Home (Graffitti) */
+/* Banner Two Home Grafitti */
 
 #banner-two-home {
 	align-items: flex-end;
@@ -144,9 +149,10 @@ header nav ul li a {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+  color: #ffffff;
 }
 
-/* Sub banner textboxes on Home*/
+/* Sub banner Home*/
 .sub-banner .banner-text {
 	background-color: rgba(120,73,225,0.9);
 	width: 25rem;
@@ -173,7 +179,7 @@ header nav ul li a {
 	margin-bottom: 1.25rem;
 }
 
-/* Banner Three Home (Fire) */
+/* Banner Three Home Fire*/
 
 #banner-three-home {
 	align-items: flex-end;
@@ -182,13 +188,14 @@ header nav ul li a {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 #banner-three-home .banner-text {
 	background-color: rgba(173, 74, 226, 0.9);
 }
 
-/* Banner Four Home (Jump) */
+/* Banner Four Home Jump */
 
 #banner-four-home {
 	align-items: flex-end;
@@ -197,6 +204,7 @@ header nav ul li a {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 /* Footer (all pages) */
@@ -207,6 +215,7 @@ footer {
 	background-size: cover;
 	background-repeat: no-repeat;
 	flex-direction: column;
+  height: 18.125rem;
 }
 
 footer nav {
@@ -214,6 +223,7 @@ footer nav {
 	justify-content: space-between;
 	padding: 0.5rem 0;
 	width: 95%;
+
 }
 
 footer a {
@@ -238,22 +248,20 @@ footer a {
 	justify-content: space-between;
 	margin-bottom: 2rem;
 	width: 55%;
+  color: #ffffff;
 }
 
 .phone-email {
     width: 40%;
     justify-content: space-around;
+    color: #ffffff;
 }
 
-/***** ABOUT *****/
+.copyright {color:#ffffff;}
 
-/* Faculty banner */
+/***** ABOUT PAGE *****/
 
-#banner-faculty {
-	background-color: #000000;
-}
-
-/* Banner About */
+/* Banner About Stepper*/
 .banner-about {
 	border-bottom: 10px solid #794ae2;
 	flex-direction: row;
@@ -347,7 +355,7 @@ footer a {
 	padding-bottom: 2rem;
 }
 
-/* Banner Map (About Page)*/
+/* Banner Map */
 #banner-map {
 	align-items: flex-end;
 	justify-content: flex-end;
@@ -355,6 +363,7 @@ footer a {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+  color:#ffffff;
 }
 
 #banner-map .text {
@@ -374,7 +383,16 @@ footer a {
 	font-weight: normal;
 }
 
-/***** CLASSES *****/
+/***** CLASSES PAGE *****/
+/* Classes banner color change */
+
+#banner-classes {
+	border-bottom: 10px solid rgba(174, 75, 227, 0.9);
+}
+
+#banner-classes .banner-about-text h1 {
+	color: rgba(174, 75, 227, 0.9);
+}
 
 #classes {
 	flex-wrap: wrap;
@@ -416,16 +434,18 @@ footer a {
 	font-size: 0.875rem;
 	line-height: 1.7;
 }
+
 /*** FACULTY PAGE ***/
 
 /* Faculty color changes */
 
-#banner-faculty p, #faculty p {
+#banner-faculty p #faculty p {
 	color: #999999;
 }
 
 #banner-faculty {
 	background-color: #000000;
+  color: #999999;
 }
 
 /* Faculty section */
@@ -469,12 +489,12 @@ footer a {
 	text-align: center;
 }
 
-
 /*** MEDIA QUERIES ***/
-/* Desktop size */
-@media only screen and (max-width: 1235px) {
 
-	/* CLASSES */
+/* Desktop size */
+@media only screen and (max-width: 1800px) {
+
+	/* CLASSES PAGE */
 	#classes .class {
 		margin-bottom: 2.25rem;
 		width: 18.75rem;
@@ -489,8 +509,8 @@ footer a {
 		line-height: 1.5;
 	}
 
-/* Tablet size */
-@media only screen and (max-width: 1095px) {
+/* Laptop size */
+@media only screen and (max-width: 1599px) {
 	/* Footer */
 	.contact {
 		width: 60%;
@@ -535,12 +555,14 @@ footer a {
 		padding: 0.875rem 0;
 	}
 
-	.hide {
+	#hide {
 		display: none;
 	}
 
 	.fa-icons {
 		width: 5.4375rem;
+    display: flex;
+    align-content: center;
 	}
 
 	.fa-2x {
@@ -564,7 +586,7 @@ footer a {
     }
 
 	/* ABOUT PAGE */
-	/* Banner About*/
+	/* Banner About Stepper*/
 	.banner-about {
 		flex-direction: column;
 	}
@@ -574,7 +596,7 @@ footer a {
 	}
 
 	#banner-faculty .banner-about-text {
-		background-color: rgba(0,0,0,1);
+		background-color: rgba(0,0,0,0.5);
 	}
 
 	.banner-about-text {
@@ -657,7 +679,7 @@ footer a {
 		padding-bottom: 0;
 	}
 
-	/* Map banner section*/
+	/* Map banner */
 	#banner-map .banner-text {
 		width: 60%;
 	}
@@ -670,18 +692,6 @@ footer a {
 		line-height: 1.6;
 	}
 
-	/*** CLASSES PAGE ***/
-/*	#classes .class {
-		margin-bottom: 2.25rem;
-		width: 18.75rem;
-	}
-	.class .time p {
-		font-size: 1.125rem;
-	}
-	.class .description p {
-		font-size: 1rem;
-		line-height: 1.5;
-	}*/
 }
 
 @media only screen and (max-width: 890px) {
@@ -699,7 +709,7 @@ footer a {
 	}
 
 	#banner-faculty .banner-about-text {
-		background-color: rgba(0,0,0,0.7);
+		background-color: rgba(0,0,0,0.3);
 	}
 
 	.banner-about {
@@ -746,3 +756,119 @@ footer a {
 	header nav ul li a {
 		font-size: 0.75rem;
 	}
+
+	/* banner home */
+	#banner-home .banner-about {
+		margin-top: 2.5rem;
+	}
+
+	#banner-home .banner-text {
+		margin-top: 7.125rem;
+		width: 18.5rem;
+	}
+
+	#banner-home h1 {
+		font-size: 1.875rem;
+		margin-bottom: 1.625rem;
+	}
+
+	#banner-home p {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 3.875rem;
+	}
+
+	.sub-banner .banner-text h2 {
+		font-size: 1.25rem;
+		line-height: 1.2;
+	}
+
+	.sub-banner .banner-text p {
+		font-size: 1rem;
+	}
+
+	.sub-banner .banner-text .text {
+		margin: 2rem 1.25rem;
+	}
+
+  footer nav {
+    justify-content: center;
+    padding: 0.875rem 0;
+  }
+
+  #hide {
+    display: none;
+  }
+
+  .fa-icons {
+    width: 5.4375rem;
+    display: flex;
+    align-content: center;
+  }
+
+  .fa-2x {
+    font-size: 1rem;
+    size: 50%;
+  }
+
+  .bottom {
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    padding: 1.875rem 0;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .phone-email {
+        display: block;
+        width: initial;
+    }
+
+	/*** CLASSES PAGE ***/
+	#classes .class {
+		margin-bottom: 2.5rem;
+		width: 17.5rem;
+	}
+
+	.class .time {
+		margin-bottom: .625rem;
+	}
+
+	.class .time h4 {
+		font-size: 1rem;
+	}
+
+	.class .time p {
+		font-size: .875rem;
+		line-height: 1.7;
+	}
+
+	/* Faculty Page */
+	.staff .name-title h2 {
+		font-size: 1.5rem;
+	}
+
+	.staff .name-title p {
+		font-size: 1rem;
+	}
+
+	.staff .likes p {
+		font-size: 0.875rem;
+		line-height: 1.7;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	.banner-about-image {
+		height: 25rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#classes {
+		justify-content: center;
+	}
+}
