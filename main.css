@@ -54,9 +54,9 @@ a:hover {
 	text-decoration: underline;
 }
 
-/*** Custom CSS ***/
+/*** Custom CSS Changes ***/
 
-/* Navbar (on all pages!) */
+/* Navbar (all pages) */
 
 header {
 	background-color: #000000;
@@ -93,7 +93,7 @@ header nav ul li a {
 }
 
 /***** HOME PAGE *****/
-/* Banner-Home */
+/* Banner-Home (Dancers) */
 
 #banner-home {
 	align-items: center;
@@ -135,7 +135,7 @@ header nav ul li a {
 	padding: 1.25rem 3.125rem;
 }
 
-/* Banner Two Home */
+/* Banner Two Home (Graffitti) */
 
 #banner-two-home {
 	align-items: flex-end;
@@ -146,7 +146,7 @@ header nav ul li a {
 	background-repeat: no-repeat;
 }
 
-/* Sub banner Home*/
+/* Sub banner textboxes on Home*/
 .sub-banner .banner-text {
 	background-color: rgba(120,73,225,0.9);
 	width: 25rem;
@@ -173,7 +173,7 @@ header nav ul li a {
 	margin-bottom: 1.25rem;
 }
 
-/* Banner Three Home */
+/* Banner Three Home (Fire) */
 
 #banner-three-home {
 	align-items: flex-end;
@@ -188,7 +188,7 @@ header nav ul li a {
 	background-color: rgba(173, 74, 226, 0.9);
 }
 
-/* Banner Four Home */
+/* Banner Four Home (Jump) */
 
 #banner-four-home {
 	align-items: flex-end;
@@ -199,7 +199,7 @@ header nav ul li a {
 	background-repeat: no-repeat;
 }
 
-/* Footer (on all pages!) */
+/* Footer (all pages) */
 
 footer {
 	background-image: url('pyt_dance_studio_resources/party-photo.png');
@@ -347,7 +347,7 @@ footer a {
 	padding-bottom: 2rem;
 }
 
-/* Banner Map */
+/* Banner Map (About Page)*/
 #banner-map {
 	align-items: flex-end;
 	justify-content: flex-end;
@@ -416,6 +416,59 @@ footer a {
 	font-size: 0.875rem;
 	line-height: 1.7;
 }
+/*** FACULTY PAGE ***/
+
+/* Faculty color changes */
+
+#banner-faculty p, #faculty p {
+	color: #999999;
+}
+
+#banner-faculty {
+	background-color: #000000;
+}
+
+/* Faculty section */
+#faculty {
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 5.625rem 7.5rem;
+	/*max-width: 1075px*/
+}
+
+.staff {
+	align-self: flex-start;
+	margin-bottom: 6.25rem;
+	width: 16.875rem;
+}
+
+.staff, .staff .name-title, .staff .likes {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.staff .picture {
+	margin-bottom: 1.25rem;
+}
+
+.staff .name-title h2 {
+	color: #8a54ff;
+	font-size: 1.875rem;
+	font-weight: bold;
+	margin-bottom: 0.625rem;
+}
+
+.staff .name-title p {
+	font-size: 1.125rem;
+	font-weight: bold;
+	padding-bottom: .625rem;
+}
+
+.staff .likes p {
+	line-height: 1.5;
+	text-align: center;
+}
+
 
 /*** MEDIA QUERIES ***/
 /* Desktop size */
@@ -693,69 +746,3 @@ footer a {
 	header nav ul li a {
 		font-size: 0.75rem;
 	}
-
-	/* banner home */
-	#banner-home, .banner-about {
-		margin-top: 2.5rem;
-	}
-
-	#banner-home .banner-text {
-		margin-top: 7.125rem;
-		width: 18.5rem;
-	}
-
-	#banner-home h1 {
-		font-size: 1.875rem;
-		margin-bottom: 1.625rem;
-	}
-
-	#banner-home p {
-		font-size: 1rem;
-		line-height: 1.6;
-		margin-bottom: 3.875rem;
-	}
-
-	.sub-banner .banner-text h2 {
-		font-size: 1.25rem;
-		line-height: 1.2;
-	}
-
-	.sub-banner .banner-text p {
-		font-size: 1rem;
-	}
-
-	.sub-banner .banner-text .text {
-		margin: 2rem 1.25rem;
-	}
-
-	/*** CLASSES ***/
-	#classes .class {
-		margin-bottom: 2.5rem;
-		width: 17.5rem;
-	}
-
-	.class .time {
-		margin-bottom: .625rem;
-	}
-
-	.class .time h4 {
-		font-size: 1rem;
-	}
-
-	.class .time p {
-		font-size: .875rem;
-		line-height: 1.7;
-	}
-}
-
-@media only screen and (max-width: 670px) {
-	.banner-about-image {
-		height: 25rem;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#classes {
-		justify-content: center;
-	}
-}
